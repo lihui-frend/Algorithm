@@ -18,7 +18,7 @@ public class Reverse {
         if (head==null||head.getNext()==null){
             return head;
         }
-        Node result = reverse(head.getNext());
+        Node result = reverse1(head.getNext());
         head.getNext().setNext(head);
         head.setNext(null);
         return result;
